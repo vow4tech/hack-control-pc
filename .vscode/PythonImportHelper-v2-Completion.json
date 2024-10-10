@@ -1,0 +1,38 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "display_this_pc_control_menu",
+        "kind": 2,
+        "importPath": "this-pc",
+        "description": "this-pc",
+        "peekOfCode": "def display_this_pc_control_menu():\n    print(\"PC OPERATIONS MENU\")\n    print(\"1. Shutdown Kali Computer Immediately\")\n    print(\"2. Shutdown Kali Computer after a given time\")\n    print(\"3. Restart Kali Computer Immediately\")\n    print(\"4. Restart Kali Computer after a given time\")\n    print(\"5. Lock Kali Computer\")\n    print(\"6. Exit\")\ndef main():\n    while True:",
+        "detail": "this-pc",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "this-pc",
+        "description": "this-pc",
+        "peekOfCode": "def main():\n    while True:\n        display_this_pc_control_menu()\n        choice = input(\"Enter desired choice :\")\n        if choice =='1':\n            os.system(\"shutdown now\")\n        elif choice == '2':\n            sec = input(\"Enter Number of Seconds to wait :\")\n            try:\n                sec = int(sec)",
+        "detail": "this-pc",
+        "documentation": {}
+    }
+]
